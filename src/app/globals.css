@@ -14,8 +14,11 @@
   --color-foreground: var(--foreground);
   --color-prim-bg: var(--prim-bg);
   --color-prim-hover: var(--prim-hover);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+
 }
 
 /* @media (prefers-color-scheme: dark) {
