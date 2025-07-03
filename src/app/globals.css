@@ -14,10 +14,12 @@
   --color-foreground: var(--foreground);
   --color-prim-bg: var(--prim-bg);
   --color-prim-hover: var(--prim-hover);
-  
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
+
+  --shadow-around: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
 }
 
