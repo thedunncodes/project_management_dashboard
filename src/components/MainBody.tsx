@@ -11,7 +11,6 @@ export default function MainBody({ children }: {children: React.ReactNode}) {
 
     const navSectionRef = useRef<HTMLDivElement>(null);
     const projectListRef = useRef<HTMLUListElement>(null);
-    // console.log(toggleSideNav, vpWidth);
 
     useEffect(() => {
         window.onclick = (event) => {
@@ -173,11 +172,17 @@ export default function MainBody({ children }: {children: React.ReactNode}) {
                         </div>
                     </div>
                 </section>
-                <section aria-label='content-section' className='relative flex-grow bg-white bg-purpdle-400 h-full rounded-ss-xl shadow-around' >
+                <section aria-label='content-section' className='relative flex-grow bg-white bg-purpdle-400 h-full rounded-ss-xl shadow-around overflow-auto' >
                     <div aria-label='content-section-wrapper' >
-                        x
-                        d
-                        {workSpace}
+                        <div aria-label='content-section-header' className='w-full min-h-20 border-b border-slate-200/75 shadow-lg shadow-slate-200/40 px-8' >
+                            <p className='text-lg leading-5 sm:leading-7 sm:text-2xl font-sans font-medium py-2' >
+                                {workSpace} workspace
+                            </p>
+                            <p className='text-[9px] sm:text-xs font-inter text-slate-600' >
+                                Welcome back, <b className='text-black/95' >John!</b>. It is the best time to manage your finances
+                            </p>
+                        </div>
+                        
                     {children}  
                     </div>
                 </section>
