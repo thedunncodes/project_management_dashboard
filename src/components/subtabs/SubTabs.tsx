@@ -46,7 +46,7 @@ export default function SubTabs() {
             )
           }
         </div>
-      <div className="h-100" ></div>
+      <div className="h-50" ></div>
       </div>
     </section>    
   )
