@@ -162,7 +162,7 @@ export default function Estimates() {
                         <div aria-label="filter-header" className="font-inter text-sm md:text-base font-bold border-b border-slate-300/75 mb-3 py-3" >
                             Filter your estimates.
 
-                            <p className="text-[10px] md:text-xs sm:text-xs font-thin mt-1" >
+                            <p className="text-[10px] md:text-xs sm:text-xs font-normal lg:font-thin mt-1" >
                                 Choose one or more of the options below
                             </p>
                         </div>
@@ -179,7 +179,7 @@ export default function Estimates() {
                                                     type='number'
                                                     name='estCost'
                                                     onChange={(e) => setOptions({ ...options, estCost: parseFloat(e.target.value) })}
-                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                    className='w-full text-[10px] md:text-xs outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
                                                 />
                                             </div>
                                         </div>
@@ -192,7 +192,7 @@ export default function Estimates() {
                                                     type='number'
                                                     name='actCost'
                                                     onChange={(e) => setOptions({ ...options, actCost: parseFloat(e.target.value) })}
-                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                    className='w-full text-[10px] md:text-xs outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
                                                 />
                                             </div>
                                         </div>
@@ -205,7 +205,7 @@ export default function Estimates() {
                                                     type='number'
                                                     name='estRev'
                                                     onChange={(e) => setOptions({ ...options, estRev: parseFloat(e.target.value) })}
-                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                    className='w-full text-[10px] md:text-xs outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
                                                 />
                                             </div>
                                         </div>
@@ -218,7 +218,7 @@ export default function Estimates() {
                                                     type='number'
                                                     name='actRev'
                                                     onChange={(e) => setOptions({ ...options, actRev: parseFloat(e.target.value) })}
-                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                    className='w-full text-[10px] md:text-xs outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
                                                 />
                                             </div>
                                         </div>
@@ -231,7 +231,7 @@ export default function Estimates() {
                                                     type='number'
                                                     name='total'
                                                     onChange={(e) => setOptions({ ...options, total: parseFloat(e.target.value) })} 
-                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                    className='w-full text-[10px] md:text-xs outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
                                                 />
                                             </div>
                                         </div>
@@ -244,7 +244,7 @@ export default function Estimates() {
                                                     type='number'
                                                     name='profitPct'
                                                     onChange={(e) => setOptions({ ...options, profitPct: parseFloat(e.target.value) })}
-                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                    className='w-full text-[10px] md:text-xs outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
                                                 />
                                             </div>
                                         </div>
