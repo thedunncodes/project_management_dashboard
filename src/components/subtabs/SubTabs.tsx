@@ -8,7 +8,7 @@ export default function SubTabs() {
 
   return (
     <section aria-label="subtabs" className="w-full" >
-      <div aria-label="subtabs-wrapper" className="w-[95%] ml-auto sm:m-auto mr-1 md:mr-0 sborder border-slate-300/75 rounded-t-sm" >
+      <div aria-label="subtabs-wrapper" className="w-[95%] ml-auto sm:m-auto mr-1 lg:mr-0 sborder border-slate-300/75 rounded-t-sm" >
         <div aria-label="subtabs-container" className="w-full flex justify-between items-center px-[5%] min-[375px]:px-[7.5%] py-3 rounded-sm border border-slate-300/75" >
           <button
             onClick={() => setActiveTab("estimates")}

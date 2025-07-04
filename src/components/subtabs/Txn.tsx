@@ -7,7 +7,7 @@ export default function Txn() {
   return (
     <article aria-label="estimates-table" >
         <div aria-label="estimates-summary" >
-            <p className="text-2xl font-bold py-5" >
+            <p className="text-sm sm:text-2xl pl-1 lg:pl-0 font-bold py-5" >
                 Expense Summary
             </p>
             <div className="w-full flex flex-wrap gap-y-5 lg:flex-nowrap justify-around" >

@@ -76,7 +76,7 @@ export default function Estimates() {
   return (
     <article aria-label="estimates-table" >
         <div aria-label="estimates-summary" >
-            <p className="text-sm sm:text-2xl font-bold py-5" >
+            <p className="text-sm sm:text-2xl pl-1 lg:pl-0 font-bold py-5" >
                 Estimate & Actuals Summary
             </p>
             <div className="w-full flex flex-wrap gap-y-5 lg:flex-nowrap justify-around lg:justify-between" >
@@ -145,8 +145,8 @@ export default function Estimates() {
         </div>
         <div aria-label="estimates-list" className="w-full mt-7" >
             <div aria-label="list-header" className="my-4 flex justify-between" >
-                <p className="text-sm sm:text-2xl font-bold py-3" >
-                    List of products and services estimates: 
+                <p className="text-sm sm:text-2xl pl-1 lg:pl-0 font-bold py-3" >
+                    List of products and services estimates
                 </p>
                 <div id="filter-menu-btn" aria-label="filter-btn" className="flex items-center justify-center" >
                     <button onClick={() => {setOpenFilter(!openFilter)}} className="flex gap-x-2 text-sm sm:text-base border items-center justify-center hover:bg-slate-100 cursor-pointer px-3 py-0.5 sm:py-1 rounded-full border border-slate-300/75 h-fit font-medium" >
@@ -158,87 +158,99 @@ export default function Estimates() {
                     fixed z-30 top-[10dvh] w-full h-full right-0 bg-slate-300/40 items-center justify-center
                     ${ openFilter ? 'flex' : 'hidden' }
                  `} >
-                    <div aria-label="filter-wrapper" id="filter-menu" className="bg-white px-5 py-3 w-[70%] m-auto rounded-sm" >
-                        <div aria-label="filter-header" className="font-inter font-bold border-b border-slate-300/75 py-3" >
+                    <div aria-label="filter-wrapper" id="filter-menu" className="bg-white px-5 py-3 w-[85%] md:w-[70%] m-auto rounded-sm -translate-y-[5dvh]" >
+                        <div aria-label="filter-header" className="font-inter text-sm md:text-base font-bold border-b border-slate-300/75 mb-3 py-3" >
                             Filter your estimates.
 
-                            <p className="text-xs sm:text-xs font-thin mt-1" >
+                            <p className="text-[10px] md:text-xs sm:text-xs font-thin mt-1" >
                                 Choose one or more of the options below
                             </p>
                         </div>
                         <div aria-label="filter-body" className="w-full" >
                             <div aria-label="filter-selectors" >
                                 <form className="" onSubmit={handleFilter} method="POST" >
-                                    <div aria-label="filter-group" className="w-full flex flex-wrap gap-x-3 gap-y-3 [&>*]:w-[30%]" >
+                                    <div aria-label="filter-group" className="w-full h-full flex flex-wrap gap-x-3 gap-y-4 [&>*]:w-[47%] md:[&>*]:w-[30%]" >
                                         <div className="flex flex-wrap" >
-                                            <label className="py-1 w-full text-sm lg:text-base" >
-                                                Est Cost <small className="text-xs" >(minimum amount)</small>
+                                            <label className="py-1 w-full text-[10px] md:text-xs lg:text-base" >
+                                                Est Cost <small className="text-[8px] md:text-xs" >(minimum amount)</small>
                                             </label>
-                                            <input
-                                                type='number'
-                                                name='estCost'
-                                                onChange={(e) => setOptions({ ...options, estCost: parseFloat(e.target.value) })}
-                                                className='outline-none border border-slate-300/75 rounded-sm h-9 px-3 text-sm lg:text-base'
-                                            />
+                                            <div className="flex w-full" >
+                                                <input
+                                                    type='number'
+                                                    name='estCost'
+                                                    onChange={(e) => setOptions({ ...options, estCost: parseFloat(e.target.value) })}
+                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                />
+                                            </div>
                                         </div>
                                         <div className="flex flex-wrap" >
-                                            <label className="py-1 w-full text-sm lg:text-base" >
-                                                Act cost <small className="text-xs" >(minimum amount)</small>
+                                            <label className="py-1 w-full text-[10px] md:text-xs lg:text-base" >
+                                                Act cost <small className="text-[8px] md:text-xs" >(minimum amount)</small>
                                             </label>
-                                            <input
-                                                type='number'
-                                                name='actCost'
-                                                onChange={(e) => setOptions({ ...options, actCost: parseFloat(e.target.value) })}
-                                                className='outline-none border border-slate-300/75 rounded-sm h-9 px-3 text-sm lg:text-base'
-                                            />
+                                            <div className="flex w-full" >
+                                                <input
+                                                    type='number'
+                                                    name='actCost'
+                                                    onChange={(e) => setOptions({ ...options, actCost: parseFloat(e.target.value) })}
+                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                />
+                                            </div>
                                         </div>
                                         <div className="flex flex-wrap" >
-                                            <label  className="py-3 w-full text-sm lg:text-base" >
-                                                Est Rev <small className="text-xs" >(minimum amount)</small>
+                                            <label  className="py-1 w-full text-[10px] md:text-xs lg:text-base" >
+                                                Est Rev <small className="text-[8px] md:text-xs" >(minimum amount)</small>
                                             </label>
-                                            <input
-                                                type='number'
-                                                name='estRev'
-                                                onChange={(e) => setOptions({ ...options, estRev: parseFloat(e.target.value) })}
-                                                className='outline-none border border-slate-300/75 rounded-sm h-9 px-3 text-sm lg:text-base'
-                                            />
+                                            <div className="flex w-full" >
+                                                <input
+                                                    type='number'
+                                                    name='estRev'
+                                                    onChange={(e) => setOptions({ ...options, estRev: parseFloat(e.target.value) })}
+                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                />
+                                            </div>
                                         </div>
                                         <div className="flex flex-wrap" >
-                                            <label  className="py-3 w-full text-sm lg:text-base" >
-                                                Act Rev <small className="text-xs" >(minimum amount)</small>
+                                            <label  className="py-1 w-full text-[10px] md:text-xs lg:text-base" >
+                                                Act Rev <small className="text-[8px] md:text-xs" >(minimum amount)</small>
                                             </label>
-                                            <input
-                                                type='number'
-                                                name='actRev'
-                                                onChange={(e) => setOptions({ ...options, actRev: parseFloat(e.target.value) })}
-                                                className='outline-none border border-slate-300/75 rounded-sm h-9 px-3 text-sm lg:text-base'
-                                            />
+                                            <div className="flex w-full" >
+                                                <input
+                                                    type='number'
+                                                    name='actRev'
+                                                    onChange={(e) => setOptions({ ...options, actRev: parseFloat(e.target.value) })}
+                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                />
+                                            </div>
                                         </div>
                                         <div className="flex flex-wrap" >
-                                            <label className="py-1 w-full text-sm lg:text-base" >
-                                                Total <small className="text-xs" >(minimum amount)</small>
+                                            <label className="py-1 w-full text-[10px] md:text-xs lg:text-base" >
+                                                Total <small className="text-[8px] md:text-xs" >(minimum amount)</small>
                                             </label>
-                                            <input
-                                                type='number'
-                                                name='total'
-                                                onChange={(e) => setOptions({ ...options, total: parseFloat(e.target.value) })} 
-                                                className='outline-none border border-slate-300/75 rounded-sm h-9 px-3 text-sm lg:text-base'
-                                            />
+                                            <div className="flex w-full" >
+                                                <input
+                                                    type='number'
+                                                    name='total'
+                                                    onChange={(e) => setOptions({ ...options, total: parseFloat(e.target.value) })} 
+                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                />
+                                            </div>
                                         </div>
                                         <div className="flex flex-wrap" >
-                                            <label className="py-1 w-full text-sm lg:text-base" >
-                                                % Profit <small className="text-xs" >(minimum %)</small>
+                                            <label className="py-1 w-full text-[10px] md:text-xs lg:text-base" >
+                                                % Profit <small className="text-[8px] md:text-xs" >(minimum %)</small>
                                             </label>
-                                            <input
-                                                type='number'
-                                                name='profitPct'
-                                                onChange={(e) => setOptions({ ...options, profitPct: parseFloat(e.target.value) })}
-                                                className='outline-none border border-slate-300/75 rounded-sm h-9 px-3 text-sm lg:text-base'
-                                            />
+                                            <div className="flex w-full" >
+                                                <input
+                                                    type='number'
+                                                    name='profitPct'
+                                                    onChange={(e) => setOptions({ ...options, profitPct: parseFloat(e.target.value) })}
+                                                    className='w-full outline-none border border-slate-300/75 rounded-sm h-6 md:h-9 px-3 text-sm lg:text-base'
+                                                />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="w-full  flex justify-end" >
-                                        <button type='submit' className="text-white py-2 px-4 rounded-md border  bg-blue-600 hover:bg-blue-500" >
+                                    <div className="w-full mt-3 md:mt-5 flex justify-end" >
+                                        <button type='submit' className="text-xs sm:text-sm lg:text-base text-white py-1 px-3 md:py-2 md:px-4 rounded-sm md:rounded-md border  bg-blue-600 hover:bg-blue-500" >
                                             Filter
                                         </button>
                                     </div>

@@ -8,7 +8,7 @@ export default function Tasks() {
         <div aria-label="tasks-wrapper" >
             <div aria-label="estimates-list" className="w-full mt-7" >
                 <div aria-label="list-header" className="my-4 flex flex-wrap" >
-                    <p className="text-sm sm:text-2xl font-bold py-3 w-full" >
+                    <p className="text-sm sm:text-2xl pl-1 lg:pl-0 font-bold py-3 w-full" >
                         Tasks in-progress
                     </p>
                     <p className="text-xs sm:text-lg font-inter" >
