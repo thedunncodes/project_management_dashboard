@@ -62,7 +62,7 @@ export default function MainBody({ children }: {children: React.ReactNode}) {
         <div aria-label='main-wrapper' className='w-full h-full' >
             <div aria-label='main-container' className='w-full flex h-full bg-[#f2f2f2] border-t border-slate-300/75' >
                 <section aria-label='nav-section' ref={navSectionRef} className={`
-                    bg-[#f2f2f2] redd-400 ${ toggleSideNav? 'max-[370px]:w-[75%] w-[60%] md:w-[35%] lg:w-[20%]' : 'w-3 md:w-5' } max-w-[30rem] h-full transition-all duration-400 ease-in-out
+                    bg-[#f2f2f2] redd-400 ${ toggleSideNav? 'max-[370px]:w-[75%] w-[60%] md:w-[35%] lg:w-[20%]' : 'w-2.5 md:w-5' } max-w-[30rem] h-full transition-all duration-400 ease-in-out
                     absolute z-3 md:relative
                    `} >
                     <div aria-label='nav-section-wrapper' className='w-full h-full' >

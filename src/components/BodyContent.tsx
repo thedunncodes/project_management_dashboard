@@ -2,6 +2,7 @@ import MainBody from "./MainBody";
 import Calendar from "./Calendar";
 import Chart from "./Chart";
 import GetViewport from "@/hooks/viewportSize";
+import SubTabs from "./subtabs/SubTabs";
 
 export default function BodyContent() {
   const [ vpWidth ] = GetViewport();
@@ -22,6 +23,11 @@ export default function BodyContent() {
                     <div aria-label="graph-wrapper" className="w-full h-full flex items-center justify-center" >
                         <Chart />
                     </div>
+                </div>
+            </section>
+            <section aria-label="sub-tabs" className="w-full mt-5" >
+                <div aria-label="sub-tabs-wrapper" className="w-full " >
+                    <SubTabs />
                 </div>
             </section>
         </article>
