@@ -168,7 +168,7 @@ export default function Estimates() {
                         </div>
                         <div aria-label="filter-body" className="w-full" >
                             <div aria-label="filter-selectors" >
-                                <form className="" onSubmit={handleFilter} >
+                                <form className="" onSubmit={handleFilter} method="POST" >
                                     <div aria-label="filter-group" className="w-full flex flex-wrap gap-x-3 gap-y-3 [&>*]:w-[30%]" >
                                         <div className="flex flex-wrap" >
                                             <label className="py-1 w-full text-sm lg:text-base" >

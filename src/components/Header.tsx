@@ -36,9 +36,8 @@ export default function Header() {
             Leton
           </div>
         </figure>
-        <section className='min-w-[80%]'>
-          <div></div>
-          <div aria-label='profile-section' className='min-w-[30%] justify-self-end w-fit' >
+        <section className='min-w-[80%] flex justify-end'>
+          <div aria-label='profile-section' className='min-w-[30%] ml-auto justify-self-end w-fit' >
             <div aria-label='profile-section-wrapper' className='w-full flex justify-end items-center gap-x-3' >
               <div aria-label='notifications' className='relative px-1 md:p-2.5 rounded-sm md:rounded-lg cursor-pointer hover:bg-prim-hover hover:shadow-sm border border-slate-300/75 shadow-prim-hover' >
                 <div aria-label='notifications-container' className='relative' >
